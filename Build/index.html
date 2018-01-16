@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                window.onbeforeunload = function() { ws = null }
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link');
+                    for (var i = 0; i < links.length;i++) {
+                    var link = links[i];
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,'');
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+	<meta charset="utf-8">
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+	<title>Pricelens | Product</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Phelia Barouh | Photography">
+	<meta name="author" content="Lyudmil Dachev">
+	<!-- Le styles -->
+	<link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+<nav class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col col--2-of-12">
+        <a href="index.html" class="current logo">Go Home</a>
+      </div>
+      <div class="col col--9-of-12 topnav">
+  			<ul>
+  				<li class='current'><a class='current' href="index.html">Product</a></li>
+  				<li><a href="demo.html">Request a Demo</a></li>
+          <li><a href="about.html">About Us</a></li>
+  			</ul>
+      </div>
+      <div class="col col--1-of-12">
+        <a href="index.html" class="current login">Log In</a>
+      </div>
+  	</div>
+  </div>
+</nav>
+
+<section class="container-fluid gradient">
+	<div class="container">
+		<div class="row">
+			<div class="col col--6-of-12 col col--centered">
+				<h1 class="color_w">Empower Your Market Intelligence
+						In The Telecom World.
+				</h1>
+			</div>
+			<div class="col col--8-of-12 col col--centered">
+				<p class="color_w center_txt">Pricelens is an efficient solution that enables you to monitor your
+					competitive environment and improve the value of your offers to the market.
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col col--12-of-12">
+				<img class="img-responsive main_image" src="img/main_image.png" alt="Product Shot"/>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="container">
+		<div class="row">
+			<div class="col col--6-of-12 col col--centered">
+				<h1 class="color_b">Pricelens In Action
+				</h1>
+			</div>
+			<div class="col col--8-of-12 col col--centered">
+				<p class="color_b center_txt">Our solution is used by Sales and Marketing,
+					Mobile and Digital Services, Procurement, Devices and Competitive Analysis
+					Departments to monitor daily market dynamics and automate data flow to stay competitive.
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col col--9-of-12 col col--centered">
+				<div class="col col--1-of-3">
+					<div class="box">
+						<p class="color_w value-txt">
+							Devices
+						</p>
+						<p class="color_w value-txt value-txt-strong">
+							AUTOMATE COMPETITOR TRACKING
+						</p>
+						<p class="color_w value-txt">
+						Automated monitoring of changes in devices’ market, portfolios,
+						prices, and history with accurate data refreshed daily.
+						</p>
+				</div>
+				</div>
+				<div class="col col--1-of-3">
+					<div class="box">
+						<p class="color_w value-txt">
+							Marketing
+						</p>
+						<p class="color_w value-txt value-txt-strong">
+							OUTPLAY THE COMPETITION
+						</p>
+						<p class="color_w value-txt">
+							Keep an eye on your competitors by monitoring prices, features,
+							launches, and bundle offers.
+						</p>
+					</div>
+				</div>
+				<div class="col col--1-of-3">
+					<div class="box">
+						<p class="color_w value-txt">
+							Mobile & Digital Services
+						</p>
+						<p class="color_w value-txt value-txt-strong">
+							COMPARE AT A GLANCE
+						</p>
+						<p class="color_w value-txt">
+							Track latest changes and compare devices, tariff plans, add-ons or promotions.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col col--6-of-12 col col--centered value_spc">
+				<div class="col col--1-of-2">
+					<div class="box">
+						<p class="color_w value-txt">
+							Procurement
+						</p>
+						<p class="color_w value-txt value-txt-strong">
+							REDUCE COSTS
+						</p>
+						<p class="color_w value-txt">
+							Negotiate better terms with Vendors on products and services
+							procurement or get compensated whenever the market drops.
+						</p>
+					</div>
+				</div>
+				<div class="col col--1-of-2">
+					<div class="box">
+						<p class="color_w value-txt">
+							Analysis and Reporting
+						</p>
+						<p class="color_w value-txt value-txt-strong">
+							CREATE BETTER REPORTS FASTER
+						</p>
+						<p class="color_w value-txt">
+							Just log into the system, grab the right information and spend
+							the rest of the time analyzing it.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+</section>
+
+<section class="container-fluid features">
+	<div class="container">
+		<div class="row">
+			<div class="col col--6-of-12 col col--centered">
+				<h1 class="color_w">Empower Your Market Intelligence
+						In The Telecom World.
+				</h1>
+			</div>
+			<div class="col col--8-of-12 col col--centered">
+				<p class="color_w center_txt">Pricelens is an efficient solution that enables you to monitor your
+					competitive environment and improve the value of your offers to the market.
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col col--12-of-12">
+				<img class="img-responsive main_image" src="img/main_image.png" alt="Product Shot"/>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="container">
+	<div class="row">
+		<div class="col col--12-of-12">
+			<div class="logos">
+				<a class="branding" href="http://www.jpgroup.dk" target="_blank"><img src="img/jp.jpg" class="img-responsive center-block" alt="Боро Ауто"></a>
+				<a class="branding" href="http://www.dp-groups.com" target="_blank"><img src="img/dpgroup.jpg" class="img-responsive center-block" alt="Боро Ауто"></a>
+				<a class="branding" href="http://www.automega.biz/startseite.html" target="_blank"><img src="img/automega.jpg" class="img-responsive center-block" alt="Боро Ауто"></a>
+			</div>
+
+			<!-- <div class="logos_two_row1">
+				<a class="branding" href="http://www.jpgroup.dk" target="_blank"><img src="img/jp.jpg" class="img-responsive center-block dln" alt="Боро Ауто"></a>
+				<a class="branding" href="http://www.dp-groups.com" target="_blank"><img src="img/dpgroup.jpg" class="img-responsive center-block dln" alt="Боро Ауто"></a>
+			</div>
+			<div class="logos_two_row2">
+				<a class="branding" href="http://www.automega.biz/startseite.html" target="_blank"><img src="img/automega.jpg" class="img-responsive center-block dln" alt="Боро Ауто"></a>
+				<a class="branding" href="http://www.bsgautoparts.com" target="_blank"><img src="img/bsg.jpg" class="img-responsive center-block dln" alt="Боро Ауто"></a>
+			</div> -->
+
+		</div>
+	</div>
+
+</section>
+
+<footer class="container-fluid footerbackground">
+	<div class="container">
+		
+		<div class="row">
+			<div class="col col--12-of-12">
+				<a href="index.html" class="current footerlogo">Go Home</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col col--12-of-12">
+				<div class="footer_navigation">
+					<ul>
+						<li class='current'><a class='current' href="index.html">Work</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col col--12-of-12">
+				<p class="copyright">
+					Copyright© 2018 Pricelens - Market Intelligence Solution for Telecoms
+				</p>
+			</div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>
