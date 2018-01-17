@@ -46,7 +46,7 @@ $toast-breakpoint-medium: 667px !default;
 $toast-breakpoint-small: 480px !default;
 
 // Pushes and pulls
-$toast-pushes: false !default;
+$toast-pushes: true !default;
 $toast-pulls: false !default;
 
 .#{$toast-grid-namespace} {

@@ -114,6 +114,8 @@ nav ul li a.colorchng {
   padding: 10px;
   border-radius: 4px;
   background-color: green;
+  display: block;
+  text-align: center;
 }
 
 //PRODUCT GRADIENT
@@ -128,6 +130,7 @@ nav ul li a.colorchng {
 //FOOTER
 .footerbackground {
   background-color: $color-black;
+  margin-top: 72px;
 }
 //
 // .footerlogo {
@@ -234,7 +237,9 @@ p {
   text-rendering: optimizeLegibility;
   padding-bottom: 46px;
 }
-
+strong {
+  font-weight: 700;
+}
 .copyright {
   font-family: 'Lato', sans-serif;
 	font-size: 11px;
@@ -406,6 +411,10 @@ textarea:focus, input:focus {
 //MODIFIERS
 .main_image {
   margin-bottom: 92px;
+}
+
+.space {
+  margin-top: 72px;
 }
 
 .box {
