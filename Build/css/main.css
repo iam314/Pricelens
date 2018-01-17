@@ -296,9 +296,6 @@ nav {
 .nocolor {
   background-color: #F2F2F2; }
 
-ul {
-  display: inline-block; }
-
 nav ul li {
   margin-top: 6px;
   display: inline-block;
@@ -313,17 +310,6 @@ nav ul li a {
   color: #F2F2F2;
   text-decoration: none;
   transition: all 100ms ease-in-out; }
-
-nav ul li a:hover {
-  padding-top: 0.2em;
-  border-top: 0.1em solid;
-  text-decoration: none; }
-
-nav li.current a {
-  color: #1a1a1a;
-  padding-top: 0.2em;
-  border-top: 0.1em solid;
-  text-decoration: none; }
 
 nav ul li a.colorchng {
   color: #1a1a1a; }
@@ -351,55 +337,8 @@ nav ul li a.colorchng {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1D4A7F', endColorstr='#F2F2F2',GradientType=0 );
   /* IE6-9 */ }
 
-.flip {
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
-  margin-bottom: -1px; }
-
 .footerbackground {
   background-color: #1a1a1a; }
-
-.footerlogo {
-  background-image: url(img/logo.svg);
-  background-repeat: no-repeat;
-  height: 48px;
-  width: 173px;
-  cursor: pointer;
-  display: block;
-  margin: 0 auto;
-  color: rgba(255, 255, 255, 0); }
-
-.footer_navigation {
-  text-align: center; }
-
-.footer_navigation ul {
-  padding: 0;
-  margin-top: 36px; }
-
-.footer_navigation ul li {
-  display: inline-block;
-  margin-right: 55px; }
-
-.footer_navigation ul li a {
-  font-family: 'HKGrotesk-Light', 'sans-serif';
-  font-size: 24px;
-  color: #1a1a1a;
-  text-decoration: none;
-  transition: all 100ms ease-in-out; }
-
-.footer_navigation ul li:last-child {
-  margin-right: 0; }
-
-.footer_navigation ul li a:hover {
-  text-decoration: none;
-  padding-bottom: 0.2em;
-  border-bottom: 0.1em solid; }
-
-.footer_navigation li.current a {
-  color: #1a1a1a;
-  padding-bottom: 0.2em;
-  border-bottom: 0.1em solid;
-  text-decoration: none; }
 
 h1 {
   font-family: 'Lato', sans-serif;
@@ -408,27 +347,38 @@ h1 {
   line-height: 140%;
   text-align: center;
   text-rendering: optimizeLegibility;
-  padding-bottom: 28px; }
+  padding-bottom: 28px;
+  color: #F2F2F2; }
 
 h2 {
   font-family: 'Lato', sans-serif;
-  font-size: 18px;
-  text-transform: uppercase;
-  text-rendering: optimizeLegibility; }
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 140%;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+  padding-bottom: 28px;
+  color: #1a1a1a; }
 
 h3 {
   font-family: 'Lato', sans-serif;
+  font-weight: 700;
   font-size: 24px;
-  line-height: 105%;
-  text-align: center;
-  margin-bottom: 24px;
-  text-rendering: optimizeLegibility; }
+  line-height: 140%;
+  text-rendering: optimizeLegibility;
+  padding-bottom: 28px;
+  color: #F2F2F2;
+  text-transform: uppercase; }
 
 h4 {
   font-family: 'Lato', sans-serif;
-  font-size: 21px;
-  padding: 36px 0 24px 0;
-  text-rendering: optimizeLegibility; }
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  text-rendering: optimizeLegibility;
+  padding-bottom: 28px;
+  color: #F2F2F2;
+  text-transform: uppercase; }
 
 p {
   font-family: 'Lato', sans-serif;
@@ -438,17 +388,6 @@ p {
   text-rendering: optimizeLegibility;
   padding-bottom: 46px; }
 
-.value-txt {
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 145%;
-  text-rendering: optimizeLegibility;
-  padding-bottom: 18px; }
-
-.value-txt-strong {
-  font-weight: 700; }
-
 .copyright {
   font-family: 'Lato', sans-serif;
   font-size: 11px;
@@ -456,6 +395,19 @@ p {
   margin-top: 36px;
   padding-bottom: 14px;
   text-rendering: optimizeLegibility; }
+
+.color_w {
+  color: #F2F2F2; }
+
+.color_b {
+  color: #1a1a1a; }
+
+.center_txt {
+  text-align: center; }
+
+.value-txt {
+  font-size: 18px;
+  padding-bottom: 18px; }
 
 .links {
   font-family: 'HKGrotesk-Light', 'sans-serif';
@@ -579,15 +531,6 @@ textarea:focus, input:focus {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#00e5ee',GradientType=0 );
   /* IE6-9 */ }
-
-.color_w {
-  color: #F2F2F2; }
-
-.color_b {
-  color: #1a1a1a; }
-
-.center_txt {
-  text-align: center; }
 
 .main_image {
   margin-bottom: 92px; }
