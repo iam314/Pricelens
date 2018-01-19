@@ -323,7 +323,7 @@ html {
 
 body {
   font-family: 'Lato', sans-serif;
-  font-size: 10px;
+  letter-spacing: 0.02em;
   text-rendering: optimizeLegibility;
   background-color: #FFFFFF; }
 
@@ -415,14 +415,14 @@ a.colorchng:hover {
   font-size: 16px;
   box-sizing: border-box;
   color: #FFFFFF;
-  text-transform: uppercase;
   text-decoration: none;
   padding: 21px 14px;
   border-radius: 4px;
   background-color: #40B253;
   display: block;
   text-align: center;
-  transition: all 300ms ease-in-out; }
+  transition: all 300ms ease-in-out;
+  border: none; }
 
 .demobtn:hover {
   background-color: #4CC787; }
@@ -446,18 +446,6 @@ a.colorchng:hover {
 .footercolor {
   background-color: #FFFFFF;
   padding-bottom: 36px; }
-
-.flinks {
-  display: block;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  margin-bottom: 10px;
-  color: #2175AC;
-  text-decoration: none; }
-
-.flinks:hover {
-  color: #1D89CF; }
 
 .fnav {
   margin-bottom: 36px; }
@@ -567,11 +555,15 @@ strong {
 q {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+  font-style: italic;
   font-size: 21px;
   line-height: 145%;
   text-rendering: optimizeLegibility;
   padding-bottom: 48px;
   color: #3D3F42; }
+
+.qtxt {
+  min-height: 90px; }
 
 .author {
   font-family: 'Lato', sans-serif;
@@ -586,18 +578,41 @@ q {
 .demooptions {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 145%;
   text-rendering: optimizeLegibility;
   padding-bottom: 48px; }
   .demooptions li {
     color: #40B253;
     border: 1px solid #40B253;
-    padding: 12px;
+    border-radius: 4px;
+    padding: 10px;
     text-align: center;
     margin-bottom: 10px;
     margin-left: 10px;
     display: inline-block; }
+
+.flinks {
+  display: block;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #2175AC;
+  text-decoration: none;
+  transition: all 100ms ease-in-out; }
+
+.flinks:hover {
+  color: #1D89CF; }
+
+.ilinks {
+  color: #2175AC;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  transition: all 100ms ease-in-out; }
+
+.ilinks:hover {
+  color: #1D89CF; }
 
 .aboutme {
   margin-top: 124px;
@@ -661,6 +676,7 @@ input, textarea {
   width: 100%;
   padding: 4px 6px;
   margin-bottom: 12px;
+  margin-top: 10px;
   font-size: 18px;
   line-height: 140%;
   color: #3D3F42;
@@ -691,7 +707,8 @@ textarea:focus, input:focus {
 
 label {
   color: #3D3F42;
-  font-size: 14px; }
+  font-size: 16px;
+  margin-bottom: 12px; }
 
 .main_image {
   margin-bottom: 82px; }
@@ -720,4 +737,7 @@ label {
   display: none; }
 
 .logos_two_row2 {
+  display: none; }
+
+.mySlides {
   display: none; }

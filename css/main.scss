@@ -19,7 +19,7 @@ html {
 
 body {
   font-family: 'Lato', sans-serif;
-	font-size: 10px;
+  letter-spacing: 0.02em;
   text-rendering: optimizeLegibility;
   background-color: $color-white;
 }
@@ -127,7 +127,7 @@ a.colorchng:hover {
   font-size: 16px;
   box-sizing: border-box;
   color: $color-white;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   text-decoration: none;
   padding: 21px 14px;
   border-radius: 4px;
@@ -135,6 +135,7 @@ a.colorchng:hover {
   display: block;
   text-align: center;
   transition: all 300ms ease-in-out;
+  border: none;
 }
 .demobtn:hover {
   background-color: $color-green;
@@ -157,20 +158,6 @@ a.colorchng:hover {
 .footercolor {
   background-color: $color-white;
   padding-bottom: 36px;
-}
-
-.flinks {
-  display: block;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  margin-bottom: 10px;
-  color: $color-blue;
-  text-decoration: none;
-}
-
-.flinks:hover {
-  color: $color-scndblue;
 }
 
 .fnav {
@@ -293,11 +280,16 @@ strong {
 q {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
+  font-style: italic;
   font-size: 21px;
   line-height: 145%;
   text-rendering: optimizeLegibility;
   padding-bottom: 48px;
   color: $color-black;
+}
+
+.qtxt {
+  min-height: 90px;
 }
 
 .author {
@@ -315,32 +307,49 @@ q {
 .demooptions {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 145%;
   text-rendering: optimizeLegibility;
   padding-bottom: 48px;
   li{
     color: $color-darkgreen;
-border: 1px solid $color-darkgreen;
-padding: 12px;
-text-align: center;
-margin-bottom: 10px;
-margin-left: 10px;
-display: inline-block;
+    border: 1px solid $color-darkgreen;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    display: inline-block;
   }
 }
 
 
-//BUTTONS AND LINKS
-// .links {
-//   font-family: 'HKGrotesk-Light', 'sans-serif';
-//   letter-spacing: 0.02em;
-//   color: $color-black;
-//   text-decoration: none;
-//   text-rendering: optimizeLegibility;
-//   border-bottom: 1px dotted $color-black;
-//   transition: all 100ms ease-in-out;
-// }
+// BUTTONS AND LINKS
+.flinks {
+  display: block;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: $color-blue;
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
+}
+
+.flinks:hover {
+  color: $color-scndblue;
+}
+
+.ilinks {
+  color: $color-blue;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  // border-bottom: 1px dotted $color-black;
+  transition: all 100ms ease-in-out;
+}
+.ilinks:hover {
+  color: $color-scndblue;
+}
 
 // a.links:hover {
 // 	text-decoration: none;
@@ -428,6 +437,7 @@ input, textarea {
   width: 100%;
   padding: 4px 6px;
   margin-bottom: 12px;
+  margin-top: 10px;
   font-size: 18px;
   line-height: 140%;
   color: $color-black;
@@ -461,12 +471,17 @@ textarea:focus, input:focus {
 .submit:hover {
   background-color: $color-green;
 }
+
 label {
   color: $color-black;
-  font-size: 14px;
+  font-size: 16px;
+  margin-bottom: 12px;
 }
 
 //MODIFIERS
+.grn {
+  // background-color: $color-blue;
+}
 .main_image {
   margin-bottom: 82px;
 }
@@ -501,6 +516,11 @@ label {
 
 .logos_two_row2 {
   display: none;
+}
+
+.mySlides {
+  display:none;
+  // min-height: 400px;
 }
 
 //RESPONSIVE

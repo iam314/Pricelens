@@ -29,7 +29,7 @@
 	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
 	<title>Pricelens | Request a Demo</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Phelia Barouh | Photography">
+	<meta name="description" content="Pricelens">
 	<meta name="author" content="Lyudmil Dachev">
 	<!-- Le styles -->
 	<link href="css/main.css" rel="stylesheet">
@@ -57,17 +57,23 @@
 </nav>
 
 
-	<section class="container topimage">
+	<section>
+		<div class="container">
 		<div class="row">
 				<div class="col col--6-of-12 col col--centered">
 					<h2>Get in Touch With Our Team and Schedule a Live Demonstration of Pricelens Core Advantages!
 					</h2>
-					<p class="center_txt">Your demo includes how to:
-					</p>
 				</div>
 		</div>
+		</div>
+		<div class="space"></div>
+
+<div class="container-fluid grn">
+	<div class="container">
 		<div class="row">
-			<div class="col col--8-of-12 col col--centered">
+			<div class="col col--6-of-12">
+				<p class="center_txt">Your demo includes how to:
+				</p>
 <ul class="demooptions">
 	<li>Track and analyze competitor’s offers</li>
 	<li>Monitor bundle offers (device + tariff plan)</li>
@@ -78,47 +84,44 @@
 </ul>
 
 			</div>
-		</div
 
-		<div class="row">
-				<div class="col col--12-of-12">
-					<h3>or use the form.</h3>
-				</div>
-		</div>
-		<div class="row">
-			<div class="col col--12-of-12">
-
+			<div class="col col--6-of-12">
+				<p class="center_txt">Fill the form to request a demo:
+				</p>
 			<form id="contactform" method="POST">
-				<label for="contact-name">Name</label>
+				<label for="contact-name">Name:</label>
 			  <input type="text" name="name" placeholder="Name"><br>
-				<!-- <label for="contact-email">email</label> -->
+				<label for="contact-email">email:</label>
 			  <input type="text" name="_replyto" placeholder="email"><br>
-				<!-- <label for="contact-name">Name</label> -->
+				<label for="contact-name">Job Title:</label>
 			  <input type="text" name="name" placeholder="Job Title"><br>
-				<!-- <label for="contact-name">Name</label> -->
+				<label for="contact-name">Company:</label>
 			  <input type="text" name="name" placeholder="Copmany"><br>
-				<!-- <label for="contact-name">Name</label> -->
+				<label for="contact-name">Phone Number:</label>
 			  <input type="text" name="name" placeholder="Phone number"><br>
 				<input type="hidden" name="_subject" value="Website Form" />
 				<input type="hidden" name="_next" value="thankyou.html" />
 				<!-- <label for="contact-message">message</label> -->
 				<br>
 				<input type="text" name="_gotcha" style="display:none" />
-			  <button class="submit" type="submit" value="Send">Send it</button>
+			  <button class="demobtn" type="submit" value="Send">REQUEST A DEMO</button>
 			</form>
 			<script>
 			    var contactform =  document.getElementById('contactform');
 			    contactform.setAttribute('action', '//formspree.io/' + 'paasdaheliabarouh' + '@' + 'gmail' + '.' + 'com');
 			</script>
 
-			</div>
 		</div>
+</div>
+</div>
 
 <div class="row">
 	<div class="col col--8-of-12 col col--centered">
-		<p>Not ready for a live demo? Have questions?
-Let our team help you get the answers you need.
-Get in touch at sales@pricelens.com or call +359-899-940-717
+		<h2>Not ready for a live demo?
+				<br>Have questions?
+		</h2>
+		<p class="center_txt">Let our team help you get the answers you need.<br>
+			Get in touch at <a href="mailto:sales@pricelens.com" target="_top" class="ilinks">sales@pricelens.com</a> or call <a href="tel:+359899940717" class="ilinks">+359&nbsp;899&nbsp;940&nbsp;717</a>
 		</p>
 	</div>
 </div>
@@ -175,6 +178,9 @@ Get in touch at sales@pricelens.com or call +359-899-940-717
 		</div>
 	</div>
 </footer>
+
+
+<script src="js/quotes.js"></script>
 
 </body>
 </html>
