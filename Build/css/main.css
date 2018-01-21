@@ -337,6 +337,9 @@ nav {
   padding-bottom: 72px;
   background-color: #2175AC; }
 
+.topnav {
+  display: inline; }
+
 .logo {
   background-image: url(../img/logo_w.svg);
   background-repeat: no-repeat;
@@ -399,6 +402,7 @@ a.colorchng:hover {
   text-transform: uppercase;
   text-decoration: none;
   margin-top: -6px;
+  width: 80px;
   padding: 12px 10px;
   border-radius: 4px;
   background-color: #40B253;
@@ -556,6 +560,7 @@ q {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-style: italic;
+  text-align: center;
   font-size: 21px;
   line-height: 145%;
   text-rendering: optimizeLegibility;
@@ -563,7 +568,8 @@ q {
   color: #3D3F42; }
 
 .qtxt {
-  min-height: 90px; }
+  min-height: 90px;
+  text-align: center; }
 
 .author {
   font-family: 'Lato', sans-serif;
@@ -613,6 +619,16 @@ q {
 
 .ilinks:hover {
   color: #1D89CF; }
+
+.paginationslideractv {
+  height: 16px;
+  width: 16px;
+  background-color: pink; }
+
+.paginationslider {
+  height: 16px;
+  width: 16px;
+  background-color: pink; }
 
 .aboutme {
   margin-top: 124px;
@@ -741,3 +757,16 @@ label {
 
 .mySlides {
   display: none; }
+
+@media screen and (max-width: 1217px) {
+  .box {
+    min-height: 256px; } }
+@media screen and (max-width: 1016px) {
+  .box {
+    min-height: 307px; } }
+@media screen and (max-width: 763px) {
+  .box {
+    min-height: 333px; } }
+@media screen and (max-width: 667px) {
+  .box {
+    min-height: auto; } }

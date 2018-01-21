@@ -37,6 +37,9 @@ nav {
   background-color: $color-blue;
 }
 
+.topnav {
+  display: inline;
+}
 .logo {
 	background-image: url(img/logo_w.svg);
 	background-repeat: no-repeat;
@@ -109,6 +112,7 @@ a.colorchng:hover {
   text-transform: uppercase;
 	text-decoration: none;
   margin-top: -6px;
+  width: 80px;
   padding: 12px 10px;
   border-radius: 4px;
   background-color: $color-darkgreen;
@@ -281,6 +285,7 @@ q {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-style: italic;
+  text-align: center;
   font-size: 21px;
   line-height: 145%;
   text-rendering: optimizeLegibility;
@@ -290,6 +295,7 @@ q {
 
 .qtxt {
   min-height: 90px;
+  text-align: center;
 }
 
 .author {
@@ -351,17 +357,16 @@ q {
   color: $color-scndblue;
 }
 
-// a.links:hover {
-// 	text-decoration: none;
-//   // background-color: #00E5EE;
-//   background: #f2f2f2; /* Old browsers */
-//   background: -moz-linear-(top, #f2f2f2 60%, #00e5ee 60%); /* FF3.6-15 */
-//   background: -webkit-linear-gradient(top, #f2f2f2 60%,#00e5ee 60%); /* Chrome10-25,Safari5.1-6 */
-//   background: linear-gradient(to bottom, #f2f2f2 60%,#00e5ee 60%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-//   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#00e5ee',GradientType=0 ); /* IE6-9 */
-//   border-bottom: 1px dotted $color-black;
-//   transition: all 100ms ease-in-out;
-// }
+.paginationslideractv {
+  height: 16px;
+  width: 16px;
+  background-color: pink;
+}
+.paginationslider {
+  height: 16px;
+  width: 16px;
+  background-color: pink;
+}
 
 //ABOUT
 .aboutme {
@@ -524,13 +529,28 @@ label {
 }
 
 //RESPONSIVE
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1217px) {
+  .box {
+    min-height: 256px;
+  }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1016px) {
+  .box {
+    min-height: 307px;
+  }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 763px) {
+  .box {
+    min-height: 333px;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .box {
+    min-height: auto;
+  }
 }
 
 @media screen and (max-width: 367px) {
