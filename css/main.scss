@@ -235,6 +235,7 @@ h3 {
   line-height: 140%;
   text-rendering: optimizeLegibility;
   padding-bottom: 18px;
+  padding-top: 56px;
   color: $color-white;
   text-transform: uppercase;
 }
@@ -457,6 +458,20 @@ q {
   display: block;
   margin: 0 auto;
 }
+.display-left, .display-right {
+  color: $color-blue;
+  font-family: 'Lato';
+  font-size: 16px;
+  border: none;
+  background-color: white;
+}
+.display-left:hover, .display-right:hover  {
+  color: darken($color-scndblue, 25%);
+}
+.qnav {
+  display: flex;
+  justify-content: center;
+}
 
 //ABOUT
 .aboutme {
@@ -548,7 +563,7 @@ label {
 }
 
 .space {
-  margin-top: 82px;
+  margin-top: 72px;
 }
 
 .spacetwo {
@@ -573,6 +588,10 @@ label {
   background-color: $color-scndblue;
 }
 
+.displayphone {
+  display: none;
+}
+
 .logos {
   display: flex;
   justify-content: space-around;
@@ -585,6 +604,14 @@ ul.logos {
   display:none;
 }
 
+.animate-right {
+  position:relative;animation:animateright 0.4s
+}
+@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+
+.animate-top
+{position:relative;animation:animatetop 0.8s}
+@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
 //RESPONSIVE
 @media screen and (max-width: 1217px) {
   .box {
@@ -607,11 +634,17 @@ ul.logos {
   }
 }
 
-@media screen and (max-width: 763px) {
+@media screen and (max-width: 780px) {
   .box {
     min-height: 333px;
   }
 }
+@media screen and (max-width: 705px) {
+  .box {
+    min-height: 359px;
+  }
+}
+
 
 @media screen and (max-width: 667px) {
   .box {
@@ -655,7 +688,144 @@ ul.logos {
     float: none;
     display: block;
   }
+  nav {
+    padding-bottom: 48px;
+  }
+  .main_image {
+    margin-bottom: 36px;
+  }
+  //SMALLER TYPE
+  h1 {
+    font-weight: 700;
+    font-size: 2.4em;
+    line-height: 140%;
+    text-align: center;
+    padding-bottom: 14px;
+  }
 
+  h2 {
+    font-weight: 700;
+    font-size: 2.4em;
+    line-height: 140%;
+    text-align: center;
+    padding-bottom: 14px;
+  }
+
+  h3 {
+    font-size: 1.8em;
+    line-height: 140%;
+    padding-bottom: 18px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  h4 {
+    font-weight: 900;
+    font-size: 1.6em;
+    line-height: 140%;
+    padding-bottom: 12px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  h5 {
+    font-size: 1.4em;
+    line-height: 140%;
+    padding-bottom: 18px;
+    text-transform: uppercase;
+  }
+
+  h6 {
+    font-size: 2.4em;
+    line-height: 140%;
+    text-align: center;
+    padding-bottom: 18px;
+  }
+
+  p {
+    font-size: 1.6em;
+  	line-height: 145%;
+    padding-bottom: 24px;
+  }
+
+  .copyright {
+  	font-size: 12px;
+    line-height: 145%;
+    text-align: center;
+    margin-top: 18px;
+    padding-bottom: 21px;
+  }
+
+  .cphone {
+    display: none;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 145%;
+    text-align: center;
+    color: $color-black;
+    margin-top: 18px;
+    padding-bottom: 21px;
+    text-rendering: optimizeLegibility;
+  }
+
+  .value-txt {
+    font-size: 16px;
+    padding-bottom: 8px;
+    text-align: center;
+  }
+
+  .featurestxt {
+    color: $color-lightgray;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  q {
+    font-style: italic;
+    text-align: center;
+    font-size: 16px;
+    line-height: 145%;
+    padding-bottom: 48px;
+  }
+
+  .qtxt {
+    min-height: 139px;
+    text-align: center;
+  }
+
+  .author {
+    font-size: 14px;
+    line-height: 145%;
+    padding-bottom: 24px;
+    padding-top: 18px;
+  }
+
+
+  .demooptions {
+    font-size: 14px;
+    line-height: 145%;
+    padding-bottom: 48px;
+    padding-left: 21px;
+    display: flex;
+    justify-items: center;
+    li{
+      color: $color-blue;
+      border: 1px solid $color-blue;
+      border-radius: 4px;
+      padding: 10px;
+      text-align: center;
+      margin-bottom: 10px;
+      margin-left: 10px;
+      display: inline-block;
+    }
+  }
+   .hidephone {
+     display: none;
+   }
+   .displayphone {
+     display: block;
+     margin: 0 auto;
+   }
 
 }
 @media screen and (max-width: 555px) {
