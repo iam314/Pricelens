@@ -25,13 +25,6 @@ body {
   background-color: $color-white;
 }
 
-// .backgraoundimage {
-//   background-image: url(img/loginbackground.jpg);
-//   background-size: cover;
-//   height: 100%;
-//   overflow: hidden;
-// }
-
 .img-responsive {
   display: block;
   max-width: 100%;
@@ -234,10 +227,13 @@ h3 {
   font-size: 2.1em;
   line-height: 140%;
   text-rendering: optimizeLegibility;
-  padding-bottom: 18px;
+  padding-bottom: 36px;
   padding-top: 56px;
   color: $color-white;
   text-transform: uppercase;
+}
+.lesspadding {
+  padding-bottom: 18px;
 }
 
 h4 {
@@ -285,7 +281,9 @@ p {
 strong {
   font-weight: 700;
 }
-
+.aboutspace {
+    margin-top: 84px;
+}
 .copyright {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -327,6 +325,13 @@ strong {
   padding-bottom: 0;
 }
 
+.listings {
+  color: $color-green;
+  font-weight: 400;
+  padding-left: 36px;
+  max-width: 720px;
+  text-align: center;
+}
 .value-txt {
   font-size: 18px;
   padding-bottom: 14px;
@@ -335,6 +340,7 @@ strong {
 .featurestxt {
   color: $color-lightgray;
   font-size: 18px;
+  padding-bottom: 24px;
 }
 
 q {
@@ -365,7 +371,6 @@ q {
   padding-top: 18px;
 }
 
-
 .demooptions {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
@@ -373,9 +378,9 @@ q {
   line-height: 145%;
   text-rendering: optimizeLegibility;
   padding-bottom: 48px;
-  padding-left: 21px;
+  padding-left: 0px;
   display: flex;
-  justify-items: center;
+  justify-content: center;
   li{
     color: $color-blue;
     border: 1px solid $color-blue;
@@ -386,6 +391,19 @@ q {
     margin-left: 10px;
     display: inline-block;
   }
+}
+
+.demooptions li:first-child {margin-left: 0;}
+
+.nopadding {
+  padding-bottom: 0;
+}
+.morepadding {
+  padding-top: 93px;
+}
+
+.morepaddingb {
+  padding-bottom: 123px;
 }
 
 // BUTTONS AND LINKS
@@ -473,26 +491,6 @@ q {
   justify-content: center;
 }
 
-//ABOUT
-.aboutme {
-  margin-top: 124px;
-  margin-bottom: 55px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-//THANK YOU
-.thankyou {
-  height: 400px;
-  p {
-    text-align: center;
-  }
-  h3{
-    margin-top: 55px;
-    margin-bottom: 14px;
-  }
-}
-
 //FORM
 form {
   margin-left: auto;
@@ -500,7 +498,14 @@ form {
   margin-bottom: 55px;
   max-width: 360px;
 }
+.narrow {
+  max-width: 260px;
+}
 
+.formtitle {
+  font-weight: 700;
+  padding-bottom: 8px;
+}
 
 input, textarea {
   font-family: 'Lato', sans-serif;
@@ -524,7 +529,7 @@ input, textarea {
 textarea:focus, input:focus {
     outline: none;
     border-color: $color-darkgreen;
-    // box-shadow: 0 0 0 #00E5EE;
+    box-shadow: 0 0 0 #00E5EE;
 }
 
 .submit {
@@ -562,12 +567,16 @@ label {
   margin-bottom: 82px;
 }
 
+.firstspacefeatures {
+  margin-top: 75px;
+}
+
 .space {
-  margin-top: 72px;
+  margin-top: 63px;
 }
 
 .spacetwo {
-  margin-top: 72px;
+  margin-top: 73px;
 }
 
 .box {
@@ -632,6 +641,16 @@ ul.logos {
   ul {
     padding-left: 72px;
   }
+  .space {
+    margin-top: 55px;
+  }
+  .spacetwo {
+    margin-top: 63px;
+  }
+  h3 {
+    padding-top: 0;
+    padding-bottom: 18px;
+  }
 }
 
 @media screen and (max-width: 780px) {
@@ -645,16 +664,12 @@ ul.logos {
   }
 }
 
-
 @media screen and (max-width: 667px) {
   .box {
     min-height: auto;
   }
   ul {
     display: none;
-  }
-  .demooptions {
-    display: block;
   }
   .login {
     display: none;
@@ -773,7 +788,9 @@ ul.logos {
     padding-bottom: 8px;
     text-align: center;
   }
-
+  .listings {
+    padding-left: 0;
+  }
   .featurestxt {
     color: $color-lightgray;
     font-size: 16px;
@@ -802,10 +819,10 @@ ul.logos {
 
 
   .demooptions {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 145%;
     padding-bottom: 48px;
-    padding-left: 21px;
+    padding-left: 0;
     display: flex;
     justify-items: center;
     li{
@@ -815,18 +832,26 @@ ul.logos {
       padding: 10px;
       text-align: center;
       margin-bottom: 10px;
-      margin-left: 10px;
+      // margin-left: 10px;
       display: inline-block;
     }
+  }
+  .nopadding {
+    padding-bottom: 0;
   }
    .hidephone {
      display: none;
    }
    .displayphone {
      display: block;
-     margin: 0 auto;
+     margin: 0 auto 21px auto;
    }
-
+   .space {
+     margin-top: 24px;
+   }
+   .spacetwo {
+     margin-top: 36px;
+   }
 }
 @media screen and (max-width: 555px) {
   .footercolor {

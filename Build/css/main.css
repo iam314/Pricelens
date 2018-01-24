@@ -510,10 +510,13 @@ h3 {
   font-size: 2.1em;
   line-height: 140%;
   text-rendering: optimizeLegibility;
-  padding-bottom: 18px;
+  padding-bottom: 36px;
   padding-top: 56px;
   color: #FFFFFF;
   text-transform: uppercase; }
+
+.lesspadding {
+  padding-bottom: 18px; }
 
 h4 {
   font-family: 'Lato', sans-serif;
@@ -558,6 +561,9 @@ p {
 strong {
   font-weight: 700; }
 
+.aboutspace {
+  margin-top: 84px; }
+
 .copyright {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -593,6 +599,13 @@ strong {
 .nopadding {
   padding-bottom: 0; }
 
+.listings {
+  color: #4CC787;
+  font-weight: 400;
+  padding-left: 36px;
+  max-width: 720px;
+  text-align: center; }
+
 .value-txt {
   font-size: 18px;
   padding-bottom: 14px;
@@ -600,7 +613,8 @@ strong {
 
 .featurestxt {
   color: #FBFBFB;
-  font-size: 18px; }
+  font-size: 18px;
+  padding-bottom: 24px; }
 
 q {
   font-family: 'Lato', sans-serif;
@@ -634,9 +648,9 @@ q {
   line-height: 145%;
   text-rendering: optimizeLegibility;
   padding-bottom: 48px;
-  padding-left: 21px;
+  padding-left: 0px;
   display: flex;
-  justify-items: center; }
+  justify-content: center; }
   .demooptions li {
     color: #2175AC;
     border: 1px solid #2175AC;
@@ -646,6 +660,18 @@ q {
     margin-bottom: 10px;
     margin-left: 10px;
     display: inline-block; }
+
+.demooptions li:first-child {
+  margin-left: 0; }
+
+.nopadding {
+  padding-bottom: 0; }
+
+.morepadding {
+  padding-top: 93px; }
+
+.morepaddingb {
+  padding-bottom: 123px; }
 
 .flinks {
   display: block;
@@ -723,25 +749,18 @@ q {
   display: flex;
   justify-content: center; }
 
-.aboutme {
-  margin-top: 124px;
-  margin-bottom: 55px;
-  margin-left: auto;
-  margin-right: auto; }
-
-.thankyou {
-  height: 400px; }
-  .thankyou p {
-    text-align: center; }
-  .thankyou h3 {
-    margin-top: 55px;
-    margin-bottom: 14px; }
-
 form {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 55px;
   max-width: 360px; }
+
+.narrow {
+  max-width: 260px; }
+
+.formtitle {
+  font-weight: 700;
+  padding-bottom: 8px; }
 
 input, textarea {
   font-family: 'Lato', sans-serif;
@@ -762,7 +781,8 @@ input, textarea {
 
 textarea:focus, input:focus {
   outline: none;
-  border-color: #40B253; }
+  border-color: #40B253;
+  box-shadow: 0 0 0 #00E5EE; }
 
 .submit {
   font-family: 'Lato', sans-serif;
@@ -794,11 +814,14 @@ label {
 .main_image {
   margin-bottom: 82px; }
 
+.firstspacefeatures {
+  margin-top: 75px; }
+
 .space {
-  margin-top: 72px; }
+  margin-top: 63px; }
 
 .spacetwo {
-  margin-top: 72px; }
+  margin-top: 73px; }
 
 .box {
   background-color: #1D89CF;
@@ -865,7 +888,17 @@ ul.logos {
     min-height: 307px; }
 
   ul {
-    padding-left: 72px; } }
+    padding-left: 72px; }
+
+  .space {
+    margin-top: 55px; }
+
+  .spacetwo {
+    margin-top: 63px; }
+
+  h3 {
+    padding-top: 0;
+    padding-bottom: 18px; } }
 @media screen and (max-width: 780px) {
   .box {
     min-height: 333px; } }
@@ -878,9 +911,6 @@ ul.logos {
 
   ul {
     display: none; }
-
-  .demooptions {
-    display: block; }
 
   .login {
     display: none; }
@@ -994,6 +1024,9 @@ ul.logos {
     padding-bottom: 8px;
     text-align: center; }
 
+  .listings {
+    padding-left: 0; }
+
   .featurestxt {
     color: #FBFBFB;
     font-size: 16px;
@@ -1017,10 +1050,10 @@ ul.logos {
     padding-top: 18px; }
 
   .demooptions {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 145%;
     padding-bottom: 48px;
-    padding-left: 21px;
+    padding-left: 0;
     display: flex;
     justify-items: center; }
     .demooptions li {
@@ -1030,15 +1063,23 @@ ul.logos {
       padding: 10px;
       text-align: center;
       margin-bottom: 10px;
-      margin-left: 10px;
       display: inline-block; }
+
+  .nopadding {
+    padding-bottom: 0; }
 
   .hidephone {
     display: none; }
 
   .displayphone {
     display: block;
-    margin: 0 auto; } }
+    margin: 0 auto 21px auto; }
+
+  .space {
+    margin-top: 24px; }
+
+  .spacetwo {
+    margin-top: 36px; } }
 @media screen and (max-width: 555px) {
   .footercolor {
     padding-bottom: 4px; }
