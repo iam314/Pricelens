@@ -34,21 +34,21 @@
 				</p>
 			<form id="contactform" method="POST">
 				<!--  <label for="contact-name">Name:</label> -->
-				<input type="text" name="name" placeholder="Name"><br>
+				<input type="text" name="name" placeholder="Name" required><br>
 			  <!-- <label for="contact-email">email:</label> -->
-			  <input type="text" name="_replyto" placeholder="email"><br>
+			  <input type="text" name="_replyto" placeholder="Email" required><br>
 				<!-- <label for="contact-name">Job Title:</label> -->
-			  <input type="text" name="name" placeholder="Job Title"><br>
+			  <input type="text" name="name" placeholder="Job Title" required><br>
 				<!-- <label for="contact-name">Company:</label> -->
-			  <input type="text" name="name" placeholder="Copmany"><br>
+			  <input type="text" name="name" placeholder="Copmany" required><br>
 				<!-- <label for="contact-name">Phone Number:</label> -->
-			  <input type="text" name="name" placeholder="Phone number"><br>
+			  <input type="text" name="name" placeholder="Phone number" required><br>
 				<input type="hidden" name="_subject" value="Website Form" />
 				<input type="hidden" name="_next" value="thankyou.html" />
 				<!-- <label for="contact-message">message</label> -->
 				<br>
 				<input type="text" name="_gotcha" style="display:none" />
-			  <button class="demobtn" type="submit" value="Send">REQUEST&nbsp;A&nbsp;DEMO</button>
+			  <input class="demobtnwide centerbtn" type="submit" value="REQUEST&nbsp;A&nbsp;DEMO">
 			</form>
 			<script>
 			    var contactform =  document.getElementById('contactform');
