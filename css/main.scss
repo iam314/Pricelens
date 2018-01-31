@@ -7,7 +7,7 @@
 
 * {
   font-smoothing: antialiased;
-  transition: all 300ms ease-in-out;
+  // transition: all 300ms ease-in-out;
 }
 
 html {
@@ -193,6 +193,12 @@ a.icon {
   display: flex;
   justify-content: center;
 }
+.footerp {
+  font-size: 16px;
+  font-weight: 400;
+  color: $color-darkgray;
+  padding-bottom: 0;
+}
 
 //TYPOGRAPHIE
 h1 {
@@ -224,10 +230,11 @@ h3 {
   line-height: 140%;
   text-rendering: optimizeLegibility;
   padding-bottom: 36px;
-  padding-top: 56px;
+  padding-top: 96px;
   color: $color-white;
   text-transform: uppercase;
 }
+
 
 .lesspadding {
   padding-bottom: 18px;
@@ -340,7 +347,7 @@ strong {
   padding-bottom: 24px;
 }
 
-q {
+.qs {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   font-style: italic;
@@ -400,7 +407,7 @@ q {
 }
 
 .morepaddingb {
-  padding-bottom: 123px;
+  padding-bottom: 230px;
 }
 
 // BUTTONS AND LINKS
