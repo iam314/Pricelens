@@ -332,7 +332,7 @@ body {
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 20px;
+  bottom: 45px;
   right: 30px;
   z-index: 99;
   border: none;
@@ -624,9 +624,15 @@ strong {
   color: #FBFBFB;
   font-weight: 400;
   font-size: 2.1em;
-  line-height: 200%;
-  padding: 36px;
+  line-height: 150%;
+  padding: 55px;
   margin-bottom: 36px; }
+
+ul.listings > li {
+  padding-bottom: 15px; }
+
+ul.listings > li:last-child {
+  padding-bottom: 0; }
 
 .blue {
   background-color: #2175AC; }
@@ -917,7 +923,8 @@ ul.logos {
   padding-left: 0; }
 
 .mySlides {
-  display: none; }
+  display: none;
+  height: 220px; }
 
 .animate-right {
   position: relative;
@@ -949,7 +956,10 @@ ul.logos {
     padding-left: 36px; }
 
   ul.alignflex {
-    padding-left: 0; } }
+    padding-left: 0; }
+
+  .mySlides {
+    height: 250px; } }
 @media screen and (max-width: 1016px) {
   .box {
     min-height: 307px; }
@@ -967,8 +977,14 @@ ul.logos {
     padding-top: 0;
     padding-bottom: 18px; }
 
+  .add {
+    padding-top: 46px; }
+
   .footeritems {
-    margin-right: 36px; } }
+    margin-right: 36px; }
+
+  .mySlides {
+    height: 280px; } }
 @media screen and (max-width: 780px) {
   .box {
     min-height: 333px; } }
@@ -993,6 +1009,9 @@ ul.logos {
 
   ul {
     display: none; }
+
+  ul.listings {
+    display: block; }
 
   .login {
     display: none; }

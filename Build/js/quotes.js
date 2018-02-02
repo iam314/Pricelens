@@ -10,6 +10,7 @@ function showDivs(n) {
 }
 
 var slideIndex = 0;
+var timer = null;
 carousel();
 
 function carousel() {
@@ -21,9 +22,10 @@ function carousel() {
     slideIndex++;
     if (slideIndex > x.length) {slideIndex = 1}
     x[slideIndex-1].style.display = "block";
-    setTimeout(carousel, 5000);
+    var timer = setTimeout(carousel, 5000);
+    // mouseenter = clearTimeout(timer);
+    // mouseout = setTimeout(carousel, 1000)
 }
-
 
 var slideIndex = 1;
 showDivs(slideIndex);
