@@ -27,6 +27,27 @@ body {
   height: auto;
 }
 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: $color-darkgreen;
+  color: $color-white;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px;
+  border-radius: 4px;
+  transition: all 300ms ease-in-out;
+}
+
+#myBtn:hover {
+  background-color: $color-green;
+}
+
 //NAVIGATION
 nav {
 	padding-top: 24px;
@@ -184,7 +205,7 @@ a.icon {
 }
 .footeritems {
   float: left;
-  margin-right: 36px;
+  margin-right: 73px;
 }
 .footeritems:last-child {
 	margin-right: 0;
@@ -196,6 +217,8 @@ a.icon {
 .footerp {
   font-size: 16px;
   font-weight: 400;
+  line-height: 168%;
+  margin-top: -5px;
   color: $color-darkgray;
   padding-bottom: 0;
 }
@@ -231,7 +254,7 @@ h3 {
   text-rendering: optimizeLegibility;
   padding-bottom: 36px;
   padding-top: 96px;
-  color: $color-white;
+  color: $color-lightgray;
   text-transform: uppercase;
 }
 
@@ -330,11 +353,17 @@ strong {
 }
 
 .listings {
-  color: $color-green;
-  font-weight: 300;
-  padding-left: 36px;
-  max-width: 720px;
+  background-color: $color-scndblue;
+  color: $color-lightgray;
+  font-weight: 400;
+  font-size: 2.1em;
+  line-height: 200%;
+  padding: 36px;
+  margin-bottom: 36px;
   // text-align: center;
+}
+.blue {
+  background-color: $color-blue;
 }
 .value-txt {
   font-size: 18px;
@@ -359,6 +388,11 @@ strong {
   color: $color-black;
 }
 
+.bolder {
+  font-weight: 400;
+  padding-bottom: 0;
+  padding-top: 36px;
+}
 .qtxt {
   min-height: 130px;
   text-align: center;
@@ -611,6 +645,7 @@ label {
 
 .firstspacefeatures {
   margin-top: 75px;
+  background-color: darken($color-lightgray, 5%);
 }
 
 .space {
@@ -696,6 +731,9 @@ ul.logos {
     padding-top: 0;
     padding-bottom: 18px;
   }
+  .footeritems {
+    margin-right: 36px;
+  }
 }
 
 @media screen and (max-width: 780px) {
@@ -703,9 +741,23 @@ ul.logos {
     min-height: 333px;
   }
 }
+@media screen and (max-width: 749px) {
+  .footeritems {
+    margin-right: 21px;
+  }
+}
 @media screen and (max-width: 705px) {
   .box {
     min-height: 359px;
+  }
+  .footeritemstop {
+    display: block;
+  }
+  .footeritems {
+    float: none;
+    text-align: center;
+    margin-right: 0;
+    margin-top: 24px;
   }
 }
 
@@ -834,10 +886,11 @@ ul.logos {
     text-align: center;
   }
   .listings {
-    padding-left: 0;
+    font-size: 1.4em;
+    padding: 21px;
+    // text-align: center;
   }
   .featurestxt {
-    color: $color-lightgray;
     font-size: 16px;
     text-align: center;
   }
@@ -904,15 +957,6 @@ ul.logos {
   }
   h5 {
     padding-bottom: 10px;
-  }
-  .footeritemstop {
-    display: block;
-  }
-  .footeritems {
-    float: none;
-    text-align: center;
-    margin-right: 0;
-    margin-top: 24px;
   }
 }
 

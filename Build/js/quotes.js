@@ -24,6 +24,7 @@ function carousel() {
     setTimeout(carousel, 5000);
 }
 
+
 var slideIndex = 1;
 showDivs(slideIndex);
 
