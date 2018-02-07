@@ -27,6 +27,14 @@ body {
   height: auto;
 }
 
+.big {
+  display: block;
+}
+
+.medium, .small, .smaller, .mini, .minimini {
+  display: none;
+}
+
 #myBtn {
   display: none;
   position: fixed;
@@ -726,6 +734,16 @@ ul.logos {
   }
 }
 
+@media screen and (max-width: 1660px) {
+  .medium {
+    display: block;
+  }
+
+  .big, .small, .smaller, .mini, .minimini {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1016px) {
   .box {
     min-height: 307px;
@@ -754,11 +772,31 @@ ul.logos {
   }
 }
 
+@media screen and (max-width: 985px) {
+  .small {
+    display: block;
+  }
+
+  .big, .medium, .smaller, .mini, .minimini {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 780px) {
   .box {
     min-height: 333px;
   }
 }
+@media screen and (max-width: 750px) {
+  .smaller {
+    display: block;
+  }
+
+  .big, .medium, .small, .mini, .minimini {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 749px) {
   .footeritems {
     margin-right: 21px;
@@ -972,6 +1010,15 @@ ul.logos {
      margin-top: 36px;
    }
 }
+@media screen and (max-width: 645px) {
+  .mini {
+    display: block;
+  }
+
+  .big, .medium, .small, .smaller, .minimini {
+    display: none;
+  }
+}
 @media screen and (max-width: 555px) {
   .footercolor {
     padding-bottom: 4px;
@@ -981,6 +1028,15 @@ ul.logos {
   }
 }
 
+@media screen and (max-width: 465px) {
+  .minimini {
+    display: block;
+  }
+
+  .big, .medium, .small, .smaller, .mini {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 463px) {
   ul.alignflex {
