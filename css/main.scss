@@ -186,6 +186,39 @@ a.icon {
   margin-top: -2px;
 }
 
+//slider
+.slider {
+    width: 100%;
+    margin: 18px auto;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+.slick-active {
+  opacity: .5;
+}
+
+.slick-current {
+  opacity: 1;
+}
+
 //FOOTER
 .footerbackground {
   background-color: darken($color-black, 5%);
@@ -261,7 +294,7 @@ h3 {
   line-height: 140%;
   text-rendering: optimizeLegibility;
   padding-bottom: 36px;
-  padding-top: 96px;
+  // padding-top: 96px;
   color: $color-lightgray;
   text-transform: uppercase;
 }
@@ -400,7 +433,7 @@ ul.listings>li:last-child {
   font-size: 18px;
   line-height: 145%;
   text-rendering: optimizeLegibility;
-  padding-bottom: 48px;
+  padding-bottom: 18px;
   color: $color-black;
 }
 
@@ -917,7 +950,12 @@ ul.logos {
   	line-height: 145%;
     padding-bottom: 24px;
   }
-
+  .qs {
+    font-size: .8em !important;
+  }
+  .author {
+    font-size: .6em !important;
+  }
   .copyright {
   	font-size: 12px;
     line-height: 145%;
@@ -957,7 +995,6 @@ ul.logos {
   q {
     font-style: italic;
     text-align: center;
-    font-size: 16px;
     line-height: 145%;
     padding-bottom: 48px;
   }
