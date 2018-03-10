@@ -329,6 +329,14 @@ body {
   max-width: 100%;
   height: auto; }
 
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+.Site-content {
+  flex: 1; }
+
 .big {
   display: block; }
 
@@ -498,7 +506,8 @@ a.icon {
 
 .footerbackground {
   background-color: #313235;
-  margin-top: 9.6em; }
+  margin-top: 9.6em;
+  width: 100%; }
 
 .footercolor {
   background-color: #313235;

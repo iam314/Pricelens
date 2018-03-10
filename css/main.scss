@@ -27,6 +27,16 @@ body {
   height: auto;
 }
 
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.Site-content {
+  flex: 1;
+}
+
 .big {
   display: block;
 }
@@ -223,6 +233,7 @@ a.icon {
 .footerbackground {
   background-color: darken($color-black, 5%);
   margin-top: 9.6em;
+  width: 100%;
 }
 .footercolor {
   background-color: darken($color-black, 5%);
